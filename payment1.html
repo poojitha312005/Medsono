@@ -13,6 +13,8 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
+
+
   <title> Medsono </title>
 
   <!-- bootstrap core css -->
@@ -22,7 +24,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -31,6 +34,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+
 
 </head>
 
@@ -46,13 +51,14 @@
               Medsono
             </span>
           </a>
-
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-         
-        
+          <div id="google_translate_element"></div>
+          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script src="js/google_translate.js"></script>
+          
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -75,9 +81,6 @@
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-                <div id="google_translate_element"></div>
-          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-          <script src="js/google_translate.js"></script>
               </form>
             </ul>
           </div>
@@ -86,63 +89,79 @@
     </header>
     <!-- end header section -->
   </div>
-  <br>
-  <br>
-  <br>
-
-  <!-- about section -->
-
-  <div class="notifications-container">
-    <div class="error-alert">
-      <div class="flex">
-        <div class="flex-shrink-0">
-          
-          <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="error-svg">
-            
-          </svg>
-        </div>
-        <div class="error-prompt-container">
-          <p class="error-prompt-heading">Medications:
-          </p><div class="error-prompt-wrap">
-            <ul class="error-prompt-list" role="list">
-                <li><strong>Medication:</strong> Take Metformin 500mg twice daily before meals.</li>
-                <li><strong>Dietary Guidelines:</strong> Follow a low-carbohydrate diet. Limit intake of sugary and starchy foods.</li>
-                <li><strong>Exercise:</strong> Engage in moderate exercise for at least 30 minutes daily.</li>
-                <li><strong>Monitoring:</strong> Check blood glucose levels regularly using a glucose meter.</li>
-                <li><strong>Follow-up:</strong> Schedule a follow-up appointment with your healthcare provider in 3 months.</li>
-            </ul>
-        </div>
-        </div>
-        <div class="error-prompt-container">
-          <p class="error-prompt-heading">
-          </p><div class="error-prompt-wrap">
-            <ul class="error-prompt-list" role="list">
-              <p><strong>Recommendations</strong></p>
-    <ul>
-        <li>Stay hydrated by drinking plenty of water throughout the day.</li>
-            <li>Avoid smoking and limit alcohol consumption.</li>
-            <li>Get regular eye exams to monitor for diabetic retinopathy.</li>
-            <li>Manage stress through relaxation techniques such as meditation or deep breathing exercises.</li>
-            <li>Join a diabetes support group to connect with others managing the condition.</li>
-        </ul>
-            </ul>
-        </div>
-        </div>
+  <div class="modal">
+    <form class="form">
+      <div class="banner"></div>
+      <label class="title">Get New customers faster</label>
+      <p class="description">Grow your customer base with our tools, you can reach a much bigger and better fan community. Go PRO now! </p>
+      <div class="tab-container">
+        <button class="tab tab--1">Monthly</button>
+        <div class="indicator"></div>
       </div>
-    </div>
-  </div>
-  <div class="iframe-container">
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/ktQzM2IA-qU" title="Tackling diabetes with a bold new dietary approach: Neal Barnard at TEDxFremont" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <div class="images">
-    <img src="images/thx.jpg" altac="About Image">
+  
+      <div class="benefits">
+        <span>What we offer</span>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="16" width="16">
+              <rect fill="black" rx="8" height="16" width="16"></rect>
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M5 8.5L7.5 10.5L11 6"></path>
+            </svg>
+            <span>Grow your customer with our social network tools</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="16" width="16">
+              <rect fill="black" rx="8" height="16" width="16"></rect>
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M5 8.5L7.5 10.5L11 6"></path>
+            </svg>
+            <span>Use E-mail automations to promote your products.</span>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="modal--footer">
+        <label class="price"><sup>₹</sup>199<sub>/Monthly</sub></label>
+        <button class="upgrade-btn">Upgrade to PRO</button>
+      </div>
+    </form>
   </div>
   <br>
-
+  <div class="modal">
+    <form class="form">
+      <div class="banner"></div>
+      <label class="title">Get New customers faster</label>
+      <p class="description">Grow your customer base with our tools, you can reach a much bigger and better fan community. Go PRO now! </p>
+      <div class="tab-container">
+        <button class="tab tab--2">Annual</button>
+        <div class="indicator"></div>
+      </div>
   
-  <!-- end about section -->
-
-  <!-- footer section -->
+      <div class="benefits">
+        <span>What we offer</span>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="16" width="16">
+              <rect fill="black" rx="8" height="16" width="16"></rect>
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M5 8.5L7.5 10.5L11 6"></path>
+            </svg>
+            <span>Grow your customer with our social network tools</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="16" width="16">
+              <rect fill="black" rx="8" height="16" width="16"></rect>
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M5 8.5L7.5 10.5L11 6"></path>
+            </svg>
+            <span>Use E-mail automations to promote your products.</span>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="modal--footer">
+        <label class="price"><sup>₹</sup>1999<sub>/Annual</sub></label>
+        <button class="upgrade-btn">Upgrade to PRO</button>
+      </div>
+    </form>
+  </div>
   <footer class="footer_section">
     <div class="container">
       <div class="row">
@@ -235,8 +254,8 @@
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved 
-          
+          &copy; <span id="displayYear"></span> All Rights Reserved
+
         </p>
       </div>
     </div>
@@ -246,8 +265,9 @@
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- owl slider -->
@@ -259,6 +279,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  <script type="text/javascript" src="js/translate.js"></script>
+
 
 </body>
 

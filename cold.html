@@ -47,9 +47,14 @@
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
+          <div id="google_translate_element"></div>
+          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script src="js/google_translate.js"></script>
+          
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -143,7 +148,16 @@
             <br>
         </div>
         <br>
-        <input type="submit" value="Submit">
+        <div class="form-group">
+          <input type="submit" value="Submit" onclick="navigateToConsultPage()">
+        </div>
+        
+        <script>
+            function navigateToConsultPage() {
+                // Redirect to consult.html
+                window.location.href = "callco.html";
+            }
+        </script>
     </form>
 
     
