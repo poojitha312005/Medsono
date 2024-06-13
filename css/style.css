@@ -1402,6 +1402,66 @@ iframe {
 .upgrade-btn:hover {
   background-color: #07b90d;
 }
+/*card */
+.cookieCard {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(to right,#9AD0C2,#9AD0C2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cookieCard::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,#9AD0C2,#9AD0C2);
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+
+.cookieHeading {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #1f1618;
+  z-index: 2;
+}
+
+.cookieDescription {
+  font-size: 0.9em;
+  color: #181516;
+  z-index: 2;
+}
+
+.cookieDescription a {
+  color: #1c1a1a;
+}
+
+.acceptButton {
+  padding: 11px 20px;
+  background-color: #5fb8a6;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.acceptButton:hover {
+  background-color: #714aff;
+  transition-duration: .2s;
+}
+
 
 .form {
   display: flex;
