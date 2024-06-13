@@ -12,8 +12,6 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
-  
-  
 
   <title> Medsono </title>
 
@@ -33,8 +31,6 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  
-
 
 </head>
 
@@ -51,9 +47,14 @@
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
+          <div id="google_translate_element"></div>
+          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script src="js/google_translate.js"></script>
+          
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -67,7 +68,7 @@
                 <a class="nav-link" href="departments.html">Departments</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctors.html">Doctors</a>
+                <a class="nav-link" href="doctors.html">Doctor Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="register.html">Register</a>
@@ -87,95 +88,85 @@
 
   <!-- about section -->
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diet Counseling</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #9AD0C2;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-    p {
-      line-height: 1.6;
-    }
-    .image {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-    }
-    .age-group {
-      margin-bottom: 20px;
-    }
-    .age-group h2 {
-      color: #9AD0C2;
-    }
-    .age-group ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Diet Counseling</h1>
-  </header>
-
-  <div class="container">
-    <div class="image">
-      <img src="images/main.jpeg" alt="Healthy Food">
-    </div>
-    <p>Welcome to our diet counseling service! We provide personalized guidance and support to help you achieve your health and nutrition goals.</p>
-    <p>Our experienced counselors will work with you to create a customized meal plan that fits your lifestyle and dietary preferences. Whether you're looking to lose weight, improve your energy levels, or simply adopt healthier eating habits, we're here to help you every step of the way.</p>
-    <p>Get started today and take the first step towards a healthier, happier you!</p>
-    
-    <div class="age-group">
-      <h2>Diet Recommendations for All Age Groups</h2>
-      <ul>
-        <li><strong>Infants (0-12 months):</strong> Breast milk or formula, introduce solid foods around 6 months.</li><br><img width="400" height="400" src="images/infants.jpg" alt="Healthy Food">
-        <li><strong>Toddlers (1-3 years):</strong> Balanced meals with fruits, vegetables, whole grains, lean proteins, and healthy fats.</li><br><img width="600" height="400"src="images/frandveg.jpeg" alt="Healthy Food">
-        <li><strong>Children (4-8 years):</strong> Varied diet with emphasis on fruits, vegetables, whole grains, lean proteins, and dairy.</li><br><img width="600" height="400"src="images/children.png" alt="Healthy Food">
-        <li><strong>Adolescents (9-18 years):</strong> Balanced meals with increased nutrient needs, emphasizing calcium, iron, and vitamin D.</li><br><img width="400" height="400"src="images/adole.png" alt="Healthy Food">
-        <li><strong>Adults (19-50 years):</strong> Balanced diet with emphasis on fruits, vegetables, whole grains, lean proteins, and healthy fats.</li><br><img width="400" height="400"src="images/adults.jpeg" alt="Healthy Food">
-        <li><strong>Older Adults (51+ years):</strong> Nutrient-rich diet with emphasis on calcium, vitamin D, and fiber, and adequate hydration.</li><br><img width="600" height="400"src="images/others.jpg" alt="Healthy Food">
-      </ul>
-    </div>
-  </div>
-
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/cold.cms" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              
+      <br>
+      
+        <br>
+        <div id="additionalQuestions" >
+            <label for="acidity">Are you experiencing acidity?</label>
+        <select id="acidity" name="acidity">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
   
+            <label for="question1">Do you experience a burning sensation in your chest or throat?</label>
+            <select id="question1" name="question1" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="question2">Do you have frequent burping or belching?</label>
+            <select id="question2" name="question2" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="question3">Do you experience a sour taste in your mouth?</label>
+            <select id="question3" name="question3" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="question4">Do you feel bloated or full quickly after eating?</label>
+            <select id="question4" name="question4" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="question5">Do you experience nausea or vomiting?</label>
+            <select id="question5" name="question5" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="question6">Do you have a chronic cough or throat irritation?</label>
+            <select id="question6" name="question6" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="question7">Do you find it difficult to swallow?</label>
+            <select id="question7" name="question7" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <br>
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="submit" value="Submit" onclick="navigateToConsultPage()">
+        </div>
+        
+        <script>
+            function navigateToConsultPage() {
+                // Redirect to consult.html
+                window.location.href = "callco.html";
+            }
+        </script>
+    </form>
 
-</body>
-</html>
+    
+         
+          </form>
+    </div>
+</section>
+
   <!-- end about section -->
 
   <!-- footer section -->
@@ -295,8 +286,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-  <script type="text/javascript" src="js/translate.js"></script>
-  
 
 </body>
 
